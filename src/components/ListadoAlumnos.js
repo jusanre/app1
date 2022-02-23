@@ -69,21 +69,25 @@ class ListadoAlumnos extends React.Component {
             return (
                 <div>
                     <h1>Listado de alumnos</h1>
-                    <ol>
+                    <table>
+                        <tr><th>Nombre</th><th>Acciones</th></tr>
                         {
                             this.state.alumnos.map((a, i) =>
-                                <li key={i}>
-                                    {a.nombre}<button onClick={()=>this.muestraAlumno(a.id)}>Mostrar datos</button>
-                                </li>
+                                <tr key={i}>
+                                <td key={i}>
+                                    {a.nombre}
+                                </td>
+                                <td>
+                                    <button onClick={()=>this.muestraAlumno(a.id)}>Ver nota</button>
+                                    </td>
+                                </tr>
                             )
                         }
-                    </ol>
+                    </table>
                     {/* Datos de un alumno, sólo si se ha elegido previamente */}
                     {this.state.estadoAlumnoElegido &&
                         <div>
-                            <h2>Alumno con id: {this.state.alumnoElegido.id}</h2>
-                            <p>Nombre: {this.state.alumnoElegido.nombre}</p>
-                            <p>Nota: {this.state.alumnoElegido.nota}</p>
+                            <h3>{this.state.alumnoElegido.nombre} ha sacado un {this.state.alumnoElegido.nota}</h3>
                         </div>
                     }
                 </div>
