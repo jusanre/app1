@@ -102,8 +102,8 @@ class ListadoAlumnos extends React.Component {
                 <div>
                     <h2>Cargando ...</h2>
                     {/* He insertado un svg de control de carga que me encontrado ;-)*/}
-                    <svg width="50px" height="50px" viewBox="0 0 50 50">
-                        <rect x="0" y="0" width="10" height="10" fill="yellow">
+                    <svg width="75px" height="75px" viewBox="0 0 100 100">
+                        <rect x="0" y="0" width="10" height="10" fill="#043a49">
                             <animate attributeName="x" from="0" to="50" dur="2s" repeatCount="indefinite" />
                         </rect>
                     </svg>

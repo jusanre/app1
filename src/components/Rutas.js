@@ -10,6 +10,7 @@ import PruebasURL from './PruebasURL';
 import Formulario from './Formulario';
 
 class Rutas extends Component {
+
     render() {
         return (
             <BrowserRouter>
@@ -17,7 +18,7 @@ class Rutas extends Component {
                     <NavLink to="/home" >Home</NavLink>
                     <NavLink to="/receta" >Receta</NavLink>
                     <NavLink to="/pruebas" >Pruebas</NavLink>
-                    <NavLink to="/pruebasurl/77" >Pruebas con parámetro</NavLink>
+                    <NavLink to={"/pruebasurl/"+1234} >Pruebas con parámetro</NavLink>
                     <NavLink to="/formulario" >Formulario</NavLink>
                     <NavLink to="/alumnos" >Listado de alumnos</NavLink>
                 </nav>
@@ -26,7 +27,7 @@ class Rutas extends Component {
                     <Route exact path="/home" element={<Home />} />
                     <Route exact path="/receta" element={<Receta />} />
                     <Route exact path="/pruebas" element={<Pruebas />} />
-                    <Route path="/pruebasurl/:id" element={<PruebasURL />} />
+                    <Route path="/pruebasurl/:parametro" element={<PruebasURL />} />
                     <Route exact path="/formulario" element={<Formulario />}></Route>
                     <Route exact path="/alumnos" element={<ListadoAlumnos />} />
                     <Route path="*" element={<ErrorRuta />} />

@@ -1,7 +1,7 @@
 const Home = () => {
     return(
         <section id="content">
-            <h1>Página principal</h1>
+            <h1>Hola, alumnos :-)</h1>
         </section>
     );
 }
