@@ -41,8 +41,6 @@ class Formulario extends React.Component {
     render() {
         return (
             <div>
-                <section id="content">
-
                     <h1>Formulario</h1>
                     
                     <form onSubmit={this.recibirFormulario} onChange={this.recibirFormulario}>
@@ -79,7 +77,6 @@ class Formulario extends React.Component {
                         <p>Género: {this.state.user.genero}</p>
                     </div>
 
-                </section>
             </div>
         );
     }

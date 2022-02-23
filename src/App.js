@@ -9,9 +9,7 @@ function App() {
    return (
     <div>
       <img src={logo} alt="logo" width="100px" />
-
       <Rutas />
-      
   </div>
   );
 }

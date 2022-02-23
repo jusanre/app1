@@ -1,8 +1,12 @@
+import React from "react";
+
 const Home = () => {
+    const saludo = "Hola, alumnos :-)";
     return(
-        <section id="content">
-            <h1>Hola, alumnos :-)</h1>
-        </section>
+        <React.Fragment>
+            <h1>Página principal</h1>
+            <h3>{saludo}</h3>
+        </React.Fragment>
     );
 }
 export default Home;

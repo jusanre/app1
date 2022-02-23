@@ -100,7 +100,7 @@ class ListadoAlumnos extends React.Component {
             // Si aún está cargando datos ...
             return (
                 <div>
-                    <h2>Cargando ...</h2>
+                    <h1>Cargando ...</h1>
                     {/* He insertado un svg de control de carga que me encontrado ;-)*/}
                     <svg width="75px" height="75px" viewBox="0 0 100 100">
                         <rect x="0" y="0" width="10" height="10" fill="#043a49">
